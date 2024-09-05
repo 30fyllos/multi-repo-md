@@ -1,0 +1,23 @@
+site_name: MD Guidebook
+theme:
+  name: material
+
+plugins:
+  - search
+  - multirepo:
+      cleanup: true
+      keep_docs_dir: false
+      nav_repos:
+{%- for repo in repos %}
+        - name: {{ repo.machine_name }}
+          import_url: '{{ repo.import_url }}'
+          imports:
+            - '**/*.md'
+{%- endfor %}
+
+nav:
+{%- for repo in repos %}
+  - '{{ repo.name }}':
+    - Home: {{ repo.machine_name }}/README.md
+    - Contributing: {{ repo.machine_name }}/CONTRIBUTING.md
+{%- endfor %}

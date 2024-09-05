@@ -1,0 +1,40 @@
+site_name: MD Guidebook
+theme:
+  name: material
+
+plugins:
+  - search
+  - multirepo:
+      cleanup: true
+      keep_docs_dir: false
+      nav_repos:
+        - name: mkdocs
+          import_url: 'https://github.com/mkdocs/mkdocs?multi_docs=True&branch=master&edit_uri=/blob/main/'
+          imports:
+            - '**/*.md'
+        - name: multirepo
+          import_url: 'https://github.com/jdoiro3/mkdocs-multirepo-plugin?multi_docs=True&branch=main&edit_uri=/blob/main/'
+          imports:
+            - '**/*.md'
+        - name: revision-date
+          import_url: 'https://github.com/timvink/mkdocs-git-revision-date-localized-plugin?multi_docs=True&branch=master&edit_uri=/blob/main/'
+          imports:
+            - '**/*.md'
+        - name: pdf-export
+          import_url: 'https://github.com/zhaoterryy/mkdocs-pdf-export-plugin?multi_docs=True&branch=master&edit_uri=/blob/main/'
+          imports:
+            - '**/*.md'
+
+nav:
+  - 'mkDocs':
+    - Home: mkdocs/README.md
+    - Contributing: mkdocs/CONTRIBUTING.md
+  - 'Multirepo':
+    - Home: multirepo/README.md
+    - Contributing: multirepo/CONTRIBUTING.md
+  - 'Revision-date':
+    - Home: revision-date/README.md
+    - Contributing: revision-date/CONTRIBUTING.md
+  - 'PDF export':
+    - Home: pdf-export/README.md
+    - Contributing: pdf-export/CONTRIBUTING.md
