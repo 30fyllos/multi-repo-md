@@ -11,3 +11,6 @@ repos:
   - name: "PDF export"
     machine_name: "pdf-export"
     import_url: "https://github.com/zhaoterryy/mkdocs-pdf-export-plugin?multi_docs=True&branch=master&edit_uri=/blob/main/"
+  - name: "Gisco"
+    machine_name: "gisco"
+    import_url: "https://github.com/zhaoterryy/mkdocs-pdf-export-plugin?multi_docs=True&branch=master&edit_uri=/blob/main/"

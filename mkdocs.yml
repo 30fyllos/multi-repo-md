@@ -24,6 +24,10 @@ plugins:
           import_url: 'https://github.com/zhaoterryy/mkdocs-pdf-export-plugin?multi_docs=True&branch=master&edit_uri=/blob/main/'
           imports:
             - '**/*.md'
+        - name: gisco
+          import_url: 'https://github.com/zhaoterryy/mkdocs-pdf-export-plugin?multi_docs=True&branch=master&edit_uri=/blob/main/'
+          imports:
+            - '**/*.md'
 
 nav:
   - 'mkDocs':
@@ -38,3 +42,6 @@ nav:
   - 'PDF export':
     - Home: pdf-export/README.md
     - Contributing: pdf-export/CONTRIBUTING.md
+  - 'Gisco':
+    - Home: gisco/README.md
+    - Contributing: gisco/CONTRIBUTING.md
