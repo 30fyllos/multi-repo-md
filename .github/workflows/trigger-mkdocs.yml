@@ -1,0 +1,19 @@
+name: Trigger Repo Build
+
+on:
+  push:
+    branches:
+      - main  # You can modify the branch as needed
+
+jobs:
+  trigger:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Trigger repo build action
+        run: |
+          curl -X POST \
+          -H "Authorization: token ${{ secrets.REPO_TOKEN }}" \
+          -H "Accept: application/vnd.github.v3+json" \
+          https://api.github.com/repos/30fyllos/multi-repo-md/dispatches \
+          -d '{"event_type": "trigger-build"}'
