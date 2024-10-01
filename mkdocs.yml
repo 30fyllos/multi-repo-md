@@ -88,10 +88,8 @@ nav:
   - A first look at the wallet:
       - Android application: eudi-app-android-wallet-ui/README.md
       - iOS application: eudi-app-ios-wallet-ui/README.md
-#  - Roadmap for the development of the reference implementation: coming_soon.md
-#  - Code of Conduct and Contributions: coming_soon.md
-#  - Developer tools to build wallets and applications: coming_soon.md
-#  - Trust model & accreditation of actors: coming_soon.md
-#  - CONFORMANCE TESTING OF APPLICATIONS: coming_soon.md
-#  - Release notes: coming_soon.md
-#  - Licensing: coming_soon.md
+  - Roadmap: roadmap.md
+  - Code of Conduct: code-of-conduct.md
+  - Developer tools to build wallets and applications: developer-tools.md
+#    - Introduction: eudi-doc-architecture-and-reference-framework/
+  - Trust model & accreditation of actors: trust-model.md
